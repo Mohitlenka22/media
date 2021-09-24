@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTCE/WEBINFO-2021</title>
+    <style>
+     .box{
+         color: red;
+         /* font-weight: bold; */
+         font-family: 'Bebas Neue', cursive;
+         font-size: 30px;
+         text-align: center;
+         display: none;
+     }
+
+     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+    @media only screen and (max-width:734px) {
+        #box1{
+            display:block;
+            overflow: hidden;
+           
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    .first{
+        text-align: center;
+        font-size: smaller;
+    }
+    div p {
+        border: 2px solid black;
+        height: 200px;
+        width: 25%;
+        box-sizing: border-box;
+        margin: auto;
+        margin-top: 20px;
+        padding: 3px;
+    }
+    #pavan{ box-sizing: border-box;
+        border: 2px solid black;
+        display: inline;
+        position: relative;
+        left: 40em;
+        top: 1em;
+        width: 25%;
+
+    }
+    .navbar{
+       background-color: rgb(206, 15, 15);
+       width: 50rem;
+       height: 60px;
+       margin-top: -14px;
+       position: sticky;
+   }
+   .navbar ul{
+       overflow: auto;
+   }
+   .navbar ul li{
+       float: left;
+       list-style: none;
+       padding-top: 10px;
+   }
+   .navbar ul li a{
+       text-decoration: none;
+      padding: 8px 8px;
+      color: white;
+   }
+   .navbar ul li a:hover{
+       background-color: tomato;
+   }
+
+      .container{
+           display: flex;
+           flex-flow: row wrap;
+           justify-content: space-evenly;
+            
+    }
+    .item{
+         margin-top: 120px;
+         display: inline-block;
+          border: 3px solid yellow;
+          color: rgb(95, 83, 83);
+          padding: 6px;
+
+      }
+      .last{ color:white;
+          position: relative;
+          top: 20em;
+          background-color: rgb(39, 35, 35);
+          height: 66px;
+          text-align: center;
+          padding-top: 45px;
+      }
+      .navbar{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+      }
+    </style>
+</head>
+<body>
+       <div class="box" id="box1">MTCE-21</div> 
+       <div class="first" id="fir1">MOCK TEST CENTRE FOR ENG..</div>
+       <header>
+        <nav class="navbar">
+            <ul>
+              <li><a href="">Home</a> </li>
+              <li><a href="">Online Applicaton</a> </li>
+              <li><a href="">Mock Test</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Services </a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+       <div class="container">
+          <div class="item" id="item1">View MTCE'S Result</div>
+          <div class="item" id="item2">Download Rank Card</div>
+       </div>
+       <div>
+              <h4 id="pavan">About Test</h4> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate nihil consectetur laudantium nostrum ab voluptatum, ipsa minus ad impedit. Saepe vel corporis ab repudiandae officia laborum nemo eligendi. Exercitationem labore, vel eveniet totam ab assumenda ad sed quos cumque cum, qui quis deleniti. Distinctio, nemo. Explicabo doloremque porro ducimus adipisci esse error voluptate neque ipsa.</p>
+          </div> 
+    </div>
+       <div class="last">&copy;Copyrights all reserved <br>Designed&Hosted by Mock Arena</div>
+</body>
+</html>
