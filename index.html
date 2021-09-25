@@ -103,6 +103,7 @@
            display: flex;
            flex-flow: row wrap;
            justify-content: space-evenly;
+           align-items: center;
             
     }
     .item{ 
@@ -131,10 +132,10 @@
             color: white;
             position: relative;
             animation-name: new;
-            animation-duration: 0.7s;
+            animation-duration: 0.5s;
             animation-iteration-count: infinite;
         }
-        @keyframes new {
+        /* @keyframes new {
            from{
                width: 0px;
                transform: scale(0.5);
@@ -142,8 +143,21 @@
            }
            to{
            width: 33px;
-           /* transform: rotate(90deg); */
+        
            }
+        } */
+
+
+        @keyframes new {
+         50%{
+             background-color: yellow;
+            
+         }
+         100%{
+            background-color:red;
+            
+         }
+
         }
         
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
@@ -189,11 +203,11 @@
         </nav>
     </header>
        <div class="container">
-           <div class="item" id="item1"> <a href="">View MTCE'S Result  <span class="container">
+           <div class="item" id="item1"> <a href="">View MTCE'S Result &nbsp; <span class="container">
             <span class="class">New<span></a> 
          <span>
     </div>
-          <div class="item" id="item2"> <a href="">Download Rank Card   <span class="container">
+          <div class="item" id="item2"> <a href="">Download Rank Card &nbsp; <span class="container">
             <span class="class">New<span></a>
             
            
