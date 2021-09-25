@@ -77,13 +77,13 @@
        height: 85px;
        margin-top: 14px;
        display: flex;
-       position: fixed; 
+       /* position: fixed;  */
        flex-flow: row wrap;
        justify-content: center;
         }
     }
     .navbar ul{
-        overflow: auto;
+        overflow: hidden;
     }
     .navbar ul li{
         float: left;
@@ -109,9 +109,11 @@
          margin-top: 120px;
          display: inline-block;
           border: 3px solid yellow;
+          /* width:100%; */
           padding: 6px;
 
       }
+
       .last{ color:white;
           position: relative;
           top: 20em;
@@ -165,6 +167,9 @@
             float: left;
             
         }
+        a .container{display: inline-block;
+                     
+                    }
     </style>
 </head>
 <body>
@@ -184,12 +189,14 @@
         </nav>
     </header>
        <div class="container">
-          <div class="item" id="item1"> <a href="">View MTCE'S Result </a> <span class="container">
-            <span class="class">New<span>
-        <span>
-        </div>
-          <div class="item" id="item2"> <a href="">Download Rank Card </a>  <span class="container">
-            <span class="class">New<span>
+           <div class="item" id="item1"> <a href="">View MTCE'S Result  <span class="container">
+            <span class="class">New<span></a> 
+         <span>
+    </div>
+          <div class="item" id="item2"> <a href="">Download Rank Card   <span class="container">
+            <span class="class">New<span></a>
+            
+           
         <span></div>
        </div>
        <h4 id="pavan">About Test</h4> 
