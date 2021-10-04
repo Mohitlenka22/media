@@ -4,241 +4,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MTCE/WEBINFO-2021</title>
+    <title>EDU News</title>
     <style>
-     .box{
-         color: red;
-         font-weight: bold;
-         /* font-family: 'Bebas Neue', cursive; */
-         font-size: 30px;
-         text-align: center;
-         font-family: 'Gemunu Libre', sans-serif;
-         
-     }
-     @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600;700&display=swap');
-     /* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
-
-
-    @media only screen and (max-width:734px) {
-        #box1{margin-top: 6px;
-            display:block;
-            overflow: hidden;    
+        #head{
+            /* text-align: center; */
+            background-color: rgb(14, 14, 78);
+            width: 120%;
+            height: 1.5em;
+            color: white;
+            margin-top: -7.7px;
+            margin-left: -8px;
+            padding: 16px 6px 6px 14px;
+            font-family: 'Ubuntu', sans-serif;
+            border-bottom: 3px solid red;
+        
         }
-        header{
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+        #navbar ul {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
+            float: right;
+            margin-top: -4em;
+            font-family: 'Ubuntu', sans-serif;
+            
         }
-    }
-    .first{
-        text-align: center;
-        font-size: smaller;
-    }
-    .sw{
-        display: flex;
-    }
-    div p {
-        border: 2px solid yellow;
-        height: 200px;
-        width: 45%;
-        box-sizing: border-box;
-        margin: auto;
-        margin-top: 32px;
-        padding: 12px 12px 12px 12px;
-        font-family: 'Noto Sans', sans-serif;
-        box-shadow:  0px 0px 7px gray, 0px 0px 7px gray, 0px 0px 7px gray, 0px 0px 7px gray;
-    }
-    @media only screen and (max-width:1208px){
-       div p{  border: 2px solid yellow;
-        flex-grow: 3;}
-       } 
-       @media only screen and (min-width:280px) and (max-width:320px){
-       div p{  border: 2px solid yellow;
-               height: 220px;
-              
+        #navbar ul li{
+            list-style: none;
+            padding: 12px;
         }
-       } 
-    
-    #pavan{ padding: 6px;
-        box-sizing: border-box;
-        border: 2px solid black;
-        width: 115px;
-        margin: auto;
-        position: relative;
-        top: 1.7rem;
-        display: block;
-    }
-    @media only screen and (max-width:280px){
-        #pavan{
-                display: inline-block;}
+        #navbar ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+
+        }
+        #navbar ul li a:hover{
+            color: saddlebrown;
+        }
+        #news{border: 4px solid yellow;
+            border-radius: 8px;
+            display: inline-block;
+            font-family: 'Ubuntu', sans-serif;
+            margin-top: -8px;
+            padding: 4px;
+            font-weight: bolder;
+            animation-name: new;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
            
         }
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
-    .navbar{
-       background-color: rgb(150, 26, 26);
-       width: 100%;
-       height: 60px;
-       margin-top: 14px;
-       /* position: sticky; */
-       display: flex;
-       flex-flow: row wrap;
-       justify-content: center;
-       /* position: fixed;  */
-    }
-    @media only screen and (min-width:218px) and (max-width:768px){
-        .navbar{
-            background-color: rgb(150, 26, 26);
-       width: 100%;
-       height: 85px;
-       margin-top: 14px;
-       display: flex;
-       /* position: fixed;  */
-       flex-flow: row wrap;
-       justify-content: center;
-        }
-    }
-    .navbar ul{
-        overflow: hidden;
-    }
-    .navbar ul li{
-        float: left;
-        list-style: none;
-        padding-top: 10px;
-    }
-    .navbar ul li a{
-        text-decoration: none;
-        padding: 8px 8px;
-        color: white;
-        font-family: 'Gemunu Libre', sans-serif;
-   }
-   @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
-   .navbar ul li a:hover{
-       background-color: tomato;
-   }
-
-      .container{
-           display: flex;
-           flex-flow: row wrap;
-           justify-content: space-around;
-           align-items: center;
-            
-    }
-    .item{ 
-         margin-top: 120px;
-         display: inline-block;
-          border: 3px solid yellow;
-          /* width:100%; */
-          padding: 6px;
-
-      }
-
-      .last{ color:white;
-          position: relative;
-          top: 20em;
-          background-color: rgb(39, 35, 35);
-          height: 66px;
-          text-align: center;
-          padding-top: 45px;
-      }
-      .last:hover{
-          color: blue;
-      }
-      .class{
-            display: inline-block;
-            background-color: red;
-            color: white;
-            position: relative;
-            animation-name: new;
-            animation-duration: 0.5s;
-            animation-iteration-count: infinite;
-        }
-        /* @keyframes new {
-           from{
-               width: 0px;
-               transform: scale(0.5);
-               
-           }
-           to{
-           width: 33px;
-        
-           }
-        } */
-
-
         @keyframes new {
-         50%{
-            background-color: white;
-            
-         }
-         100%{
-            background-color: red;
-            
-         }
+            25%{
+                color: red;
+            }
+            50%{
+                color: green;
+            }
+            75%{
+                color: blue;
+            }
+            100%{
+                color:black;
+            }
+        }
+        #para{width: 35%;
+            /* font-family: 'Anton', sans-serif; */
+            font-size: medium;
+            font-family: 'Gluten', cursive;
+             margin: 6px;     
+        }
+        .n{
+            font-size: medium;
+            font-family: 'Gluten', cursive;
+             margin: 6px; 
+             /* text-decoration: underline;
+             text-decoration-color:red;
+             text-decoration-thickness: 4px;     */
 
         }
-        
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
-        #item1 a{
-            text-decoration: none;
-            color: gray;
+        @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
+        #btn{
+            background-color: blue;
+            padding: 6px;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            position: relative;
+            left: 7.5rem;
+            border-radius: 8px;
+            cursor: pointer;
         }
-        #item1 a:hover{
-            color: black;
-        }
-        #item2 a{
-            text-decoration: none;
-            color: gray;
-        }
-        #item2 a:hover{
-            color: black;
-        }
-        #ima{
-            width: 135px;
-            /* margin-left: 45px; */
-            float: left;
+        #in{
+            border-radius: 8px;
             
         }
-        a .container{display: inline-block;
-                     
-                    }
+       input[type="search"]{
+           text-align: center;
+           /* padding: 8px; */
+           color: gray;
+           cursor: pointer;
+           margin: 8px;
+           position: relative;
+           bottom: 4px;
+       }
+       @media only screen and (min-width:320px) and  (max-width:768px) {
+           #para{
+               width: 100%;
+               margin: 6px;
+           }
+           #btn{
+               position: relative;
+               left: 6rem;
+           }
+
+       }
+       #span{ font-family: sans-serif;
+        border-radius: 4px;
+        padding: 3px;
+           color: white;
+           animation-name: nn;
+           animation-duration: 0.7s;
+           animation-iteration-count: infinite;
+       }
+       @keyframes nn{  
+           50%{
+               background-color: white;
+
+           }
+           100%{
+               background-color: red;
+           }
+       }
+       footer{display: flex;
+        justify-content: center;
+        align-items: center;
+           background-color: rgb(85, 62, 62);
+           height: 80px;
+           color: white;
+           font-family: cursive;
+           position: relative;
+           top: 50vh;
+       }
+
     </style>
 </head>
 <body>
-    <!-- <img id="ima" src="/new.jpg" alt="error"> -->
-    <div class="box" id="box1">MTCE-2021 </div> 
-    <div class="first" id="fir1">MOCK TEST CENTRE FOR ENG..</div>
     <header>
-        <nav class="navbar">
+        <nav id="navbar">
+            <h3 id="head">EDU NEWS.COM</h3>
             <ul>
-              <li><a href="">Home</a> </li>
-              <li><a href="">Online Applicaton</a> </li>
-              <li><a href="">Mock Test</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Services </a></li>
-              <li><a href="">Contact us</a></li>
+                <li> <a href="">Home</a></li>
+                <li> <a href="">Contact Us</a></li>
+                <li> <a href="">Services</a></li>
+                <input type="search" name="" id="in" placeholder="SEARCH HERE">
             </ul>
         </nav>
     </header>
-    <p style="justify-content: center;align-items:center;border: 2px solid rgb(167, 19, 105);height:35px;display: flex;padding: 14px;width: 50%;margin-left: 300px;">Due to Technical issues Registration for MTCE(MAIN)-2021 is Delayed</p>
-       <div class="container">
-           <!-- <div class="item" id="item1"> <a href="">View MTCE'S Result &nbsp; <span class="container">
-            <span class="class">New<span></a> 
-         <span>
+    <h4 id="news">NEW'S DESK:</h4>
+    <div class="n">Here's an update from EAPCET (AP)-2021 : <span id="span" >NEW</span></div>
+    <div id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corporis hic blanditiis nulla dolorum iusto reiciendis ex alias! Consequatur voluptates quae, iusto quod ipsam eum excepturi ea, tempore obcaecati ex architecto a et eaque reiciendis numquam vero delectus eos. Eum labore nulla quis qui corporis incidunt corrupti suscipit minus officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut tempore soluta numquam quae? Autem optio totam perferendis eaque molestiae vero nihil alias, hic temporibus officiis eveniet, ea repellendus nisi laudantium deserunt illo ullam, blanditiis aperiam libero incidunt quia sit quaerat corporis. Vero, porro dolor!
     </div>
-          <div class="item" id="item2"> <a href="">Download Rank Card &nbsp; <span class="container">
-            <span class="class">New<span></a>
+    <div class="cen">
+
+        <button id="btn" onclick="hide()" >SHOW FULL ARTICLE</button>
+    </div>
+    <footer>&copy;Copyrights all reserved.</footer>
+
+    <script>
+        
+        function hide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if(  para.style.display!='none'){
+
+                para.style.display='none'
+            }
+            else{
+                para.style.display='block'
+            }
+
             
-            -->
-            <div class="item" id="item1"> <a href="/online Application.html" target="_blank">Register For MTCE(Main)-2021 &nbsp; <span class="container">
-                <span class="class">New<span></a> 
-             <span>
-        <span></div>
-       </div>
-       <h4 id="pavan">ABOUT&nbsp;TEST</h4> 
-       <div class="sw">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur deserunt libero ea asperiores sed aspernatur iste est maxime id veniam debitis reprehenderit consequatur, ducimus cumque explicabo? Hic itaque repudiandae assumenda reprehenderit animi? Laborum, soluta inventore. Voluptates, at. Nam reiciendis vel iusto assumenda ipsa porro, odio aut, architecto ratione aspernatur ma</p>
-          </div> 
-    </div>
-       <div class="last">&copy;Copyrights all reserved. <br>Designed&Hosted by Mock Arena. <br> Contents are provided by MTCE-2021 ADMINSTRATION </div>
+        }
+    </script>
 </body>
 </html>
