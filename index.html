@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDU News</title>
     <style>
-         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gluten:wght@200&family=Oswald&display=swap');
-        #head{
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gluten:wght@200&family=Oswald&display=swap');
+
+        #head {
             /* text-align: center; */
             background-color: rgb(14, 14, 78);
             width: 100%;
-            height: 1.5em;
+            height: 1.8em;
             color: white;
             margin-top: -7.7px;
             margin-left: -8px;
-            padding: 16px 6px 6px 14px;
+            padding: 33px 6px 16px 14px;
             font-family: 'Ubuntu', sans-serif;
             border-bottom: 3px solid red;
-        
+
         }
+
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
         #navbar ul {
             display: flex;
-            flex-flow: row wrap;
-            float: right;
-            margin-top: -0.4em;
+            flex-flow: column wrap;
+            /* justify-content: center;
+            align-items: center; */
+            position: absolute;
+            left: 69em;
+            padding: 90px 47px;
+            margin-top: -2.8em;
+            
             font-family: 'Ubuntu', sans-serif;
-            background-color: whitesmoke;
-            border-radius: 6px;
-            box-shadow: 0 0 4px gray,  0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
-            
-            
+            background-color:rgb(24, 21, 21);
+            /* border-radius: 6px; */
+            /* margin: 8px; */
+            box-shadow: 0 0 6px gray, 0 0 6px gray, 0 0 6px gray, 0 0 6px gray;
+        
         }
-        #navbar ul li{
+
+        #navbar ul li {
             list-style: none;
-            padding: 12px;
+            padding: 20px;
         }
-        #navbar ul li a{
+
+        #navbar ul li a {
             text-decoration: none;
-            color: black;
+            color: white;
             font-weight: bolder;
 
         }
-        #navbar ul li a:hover{
-            color: saddlebrown;
-        }
-        #news{border: 4px solid yellow;
+        
+        /* .pavan:hover::after {
+            position: absolute;
+            content: "";
+            width: 5%;
+            height: 0.18rem;
+            top: 6rem;
+            right:25rem;
+            background-color: blue;
+        } */
+
+        #news {
+            border: 4px solid yellow;
             border-radius: 8px;
             display: inline-block;
             font-family: 'Ubuntu', sans-serif;
@@ -57,39 +77,46 @@
             animation-duration: 1s;
             animation-iteration-count: infinite;
             /* border-top: 2px solid rgb(177, 152, 12); */
-           
+
         }
+
         @keyframes new {
-            25%{
+            25% {
                 color: red;
             }
-            50%{
+
+            50% {
                 color: green;
             }
-            75%{
+
+            75% {
                 color: blue;
             }
-            100%{
-                color:black;
+
+            100% {
+                color: black;
             }
         }
-        #para{width: 35%;
-           
-            font-size: medium;
+
+        #para {
+            width: 39%;
+
+            font-size: larger;
             /* font-family: 'Oswald', sans-serif; */
             font-family: 'Bebas Neue', cursive;
-             margin: 8px;     
+            margin: 8px;
         }
+
         /* @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&family=Oswald&display=swap'); */
-        .n{
+        .n {
             font-size: medium;
             font-family: 'Bebas Neue', cursive;
-             margin: 6px; 
-           
+            margin: 6px;
+
         }
-       
-        
-        #btn{
+
+
+        #btn {
             background-color: blue;
             border: 2px solid black;
             padding: 6px;
@@ -101,118 +128,235 @@
             border-radius: 8px;
             cursor: pointer;
         }
-        #btn:hover{
-            background-color:rgb(54, 4, 54);
+
+        #btn:hover {
+            background-color: rgb(54, 4, 54);
         }
-        #in{
+
+        #in {
             border-radius: 8px;
-            
+
         }
-       input[type="search"]{
-           text-align: center;
-           /* padding: 8px; */
-           color: gray;
-           cursor: pointer;
-           margin: 8px;
-           position: relative;
-           bottom: 1.4px;
-           border: 2px solid black;
-       }
-       @media only screen and (min-width:320px) and  (max-width:768px) {
-           #para{
-               width: 100%;
-               margin: 6px;
-               /* font-family: 'Gluten', cursive; */
-               font-family: 'Bebas Neue', cursive;
-           }
-           /* @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap'); */
 
-           #btn{
-               position: relative;
-               left: 7.5rem;
-           }
+        input[type="search"] {
+            text-align: center;
+            /* padding: 8px; */
+            color: gray;
+            cursor: pointer;
+            margin: 8px;
+            position: relative;
+            bottom: 1.4px;
+            border: 2px solid black;
+        }
 
-       }
-       #span{ font-family: sans-serif;
-        border-radius: 4px;
-        padding: 3px;
-           color: white;
-           animation-name: nn;
-           animation-duration: 0.7s;
-           animation-iteration-count: infinite;
-       }
-       @keyframes nn{  
-           50%{
-               background-color: white;
+        @media only screen and (min-width:320px) and (max-width:400px) {
+            #para {
+                width: 90%;
+                margin: 6px;
+                font-family: 'Bebas Neue', cursive;
+            }
 
-           }
-           100%{
-               background-color: red;
-           }
-       }
-       footer{display: flex;
-        justify-content: center;
-        align-items: center;
-           background-color: rgb(85, 62, 62);
-           height: 80px;
-           color: white;
-           /* font-family: 'Gluten', cursive; */
-           font-family: 'Bebas Neue', cursive;
-           position: relative;
-           top: 50vh;
-       }
+            #btn {
+                position: relative;
+                left: 7.5rem;
+            }
+
+            .burger{position: relative;
+           top: -5em;
+           left: 7em;
+            background-color: gray;
+            width: 29px;
+            padding: 5px;
+            border-radius: 4px;
+            margin-left: 34px;
+           
+                    
+        }
+            
+             .line {background-color: black;
+            height: 2px;
+            width: 23px;
+            margin: 3px 3px;
+            border-radius: 6px;
+            position: relative;
+            left: -63em;
+            background-color: gray;
+            /* display: inline; */
+             }
+             
+
+             #navbar ul {
+            display: flex;
+            flex-flow: column wrap;
+            position: absolute;
+            left: 10.2em;
+            padding: 90px 47px;
+            margin-top: -2.8em;
+            font-family: 'Ubuntu', sans-serif;
+            background-color:rgb(24, 21, 21);
+            box-shadow: 0 0 6px gray, 0 0 6px gray, 0 0 6px gray, 0 0 6px gray;
+        
+        }
+        footer{
+            padding: 23px;
+        }
       
+    }       
+    
+        #span {
+            font-family: sans-serif;
+            border-radius: 4px;
+            padding: 3px;
+            color: white;
+            animation-name: nn;
+            animation-duration: 0.7s;
+            animation-iteration-count: infinite;
+        }
 
+        @keyframes nn {
+            50% {
+                background-color: white;
+
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(85, 62, 62);
+            height: 90px;
+            color: white;
+            /* font-family: 'Gluten', cursive; */
+            /* font-family: 'Bebas Neue', cursive; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+            top: 50vh;
+        }
+        .burger{
+           position: relative;
+           top: -5em;
+           left: 79em;
+            background-color: gray;
+            width: 29px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        
+        
+        .line{background-color:black;
+            height: 2px;
+            width: 23px;
+            margin: 3px 3px;
+            border-radius: 6px; 
+            /* position: relative;
+            left: -0.1em; */
+
+        } 
+        #time{padding: 8px;
+            position: relative;
+            top: 12px;
+            right: 1px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
     </style>
 </head>
+
 <body>
     <h3 id="head">EDU NEWS.COM</h3>
-    <header>
-      <!-- <h4 id="na">NAV TECNIK >></h4> -->
+    <header id="nav">
+        <!-- <h4 id="na">NAV TECNIK >></h4> -->
+        <div class="burger" onclick="show()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <nav id="navbar">
             <ul>
-                <li style=" font-family: 'Ubuntu', sans-serif;font-weight: bold;" >NAV TECNIK >></li>
-                <li> <a href="">Home</a></li>
-                <li> <a href="">Contact Us</a></li>
-                <li> <a href="">Services</a></li>
-                <input type="search" name="" id="in" placeholder="SEARCH HERE">
+                <li style=" font-family: 'Ubuntu', sans-serif;font-weight: bold;color: royalblue;">NAV TECNIK >></li>
+                <li> <a class="pavan" href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li> <a class="pavan" href="">Services</a></li>
+                <li> <a class="pavan" href="">Contact Us</a></li>
+                <!-- <input type="search" name="" id="in" placeholder="SEARCH HERE"> -->
             </ul>
         </nav>
     </header>
-    
+   
     <h4 id="news">NEW'S DESK:</h4>
-    <div class="n">Here's an update from EAPCET (AP)-2021 : <span id="span" >NEW</span></div>
+    <div class="n">Here's an update from EAPCET (AP)-2021 : <span id="span">NEW</span></div>
     <div id="para">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corporis hic blanditiis nulla dolorum iusto reiciendis ex alias! Consequatur voluptates quae, iusto quod ipsam eum excepturi ea, tempore obcaecati ex architecto a et eaque reiciendis numquam vero delectus eos. Eum labore nulla quis qui corporis incidunt corrupti suscipit minus officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut tempore soluta numquam quae? Autem optio totam perferendis eaque molestiae vero nihil alias, hic temporibus officiis eveniet, ea repellendus nisi laudantium deserunt illo ullam, blanditiis aperiam libero incidunt quia sit quaerat corporis. Vero, porro dolor!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corporis hic blanditiis nulla dolorum iusto
+        reiciendis ex alias! Consequatur voluptates quae, iusto quod ipsam eum excepturi ea, tempore obcaecati ex
+        architecto a et eaque reiciendis numquam vero delectus eos. Eum labore nulla quis qui corporis incidunt corrupti
+        suscipit minus officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut tempore soluta
+        numquam quae? Autem optio totam perferendis eaque molestiae vero nihil alias, hic temporibus officiis eveniet,
+        ea repellendus nisi laudantium deserunt illo ullam, blanditiis aperiam libero incidunt quia sit quaerat
+        corporis. Vero, porro dolor! 
     </div>
     <div class="cen">
 
-        <button id="btn" onclick="hide()" >SHOW/HIDE &checkmark;</button>
+        <button id="btn" onclick="hide()">SHOW/HIDE &checkmark;</button>
     </div>
-    <footer>&copy;Copyrights all reserved.</footer>
+    <footer>&copy;Copyrights all reserved.
+       <div class=""> <div>
+        <span id="time">TIME::  </span>
+    </div></div>
+    </footer>
 
     <script>
-        
+
         function hide() {
             let btn = document.getElementById('btn');
             let para = document.getElementById('para');
-            if(  para.style.display!='none'){
+            if (para.style.display != 'none') {
 
-                para.style.display='none'
+                para.style.display = 'none'
             }
-            else{
-                para.style.display='block'
+            else {
+                para.style.display = 'block'
             }
 
-            
+
         }
-        const sr = ScrollReveal({
-    origin: 'top',
-    distance: '8rem',
-    duration: 2000,
-    reset: true
-       });
-       sr.reveal('#para',{delay: 200}); 
+
+        // function show() {
+        //     let burger = document.getElementById('burger');
+        //     let navbar = document.getElementById('navbar');
+        //     if (navbar.style. display !='none') {
+
+        //         navbar.style. display= 'none'
+        //     }
+        //     else {
+        //         navbar.style.display = 'block'
+        //     }
+        // }
+
+       var a;
+       function show(){
+           if (a==1){
+                document.getElementById('navbar').style.display="none";
+                return a=0;
+
+           }
+           else{
+               document.getElementById('navbar').style.display='inline'
+               return a=1;
+           }
+       }
+      function displayTime(){
+          time = new Date();
+          console.log(time);
+          document.getElementById('time').innerHTML =time;
+      }
+      setInterval(displayTime, 1000);
+
     </script>
 </body>
+
 </html>
