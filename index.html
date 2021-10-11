@@ -1,364 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDU News</title>
+    <title>jet</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gluten:wght@200&family=Oswald&display=swap');
+         h3{
+             text-align: center;
+             color: red;
+             font-weight: bold;
+         }
+      #anim{
+          background-color: whitesmoke;
+          border-radius: 4px;
+          box-shadow: 0 0 4px gray , 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
+          position: absolute;
+          left: 55em;
+          position: relative;
+          animation-name: pav;
+          animation-duration: 9s;
+          animation-iteration-count: infinite;
+          transition-delay: 3s;
+          transition-timing-function: ease-in-out;
+          margin-top: 7px;
+          padding: 3px 6px 3px 6px;
+          
 
-        #head {
-            /* text-align: center; */
-            background-color: rgb(14, 14, 78);
-            width: 100%;
-            height: 1.8em;
-            color: white;
-            margin-top: -7.7px;
-            margin-left: -8px;
-            padding: 33px 6px 16px 14px;
-            font-family: 'Ubuntu', sans-serif;
-            border-bottom: 3px solid red;
-
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
-
-        #navbar ul {
-            display: flex;
-            flex-flow: column wrap;
-            /* justify-content: center;
-            align-items: center; */
-            position: absolute;
-            left: 69em;
-            padding: 90px 47px;
-            margin-top: -2.8em;
+      }
+    @keyframes pav{
+        25%{
+            left: 12em;
             
-            font-family: 'Ubuntu', sans-serif;
-            background-color:rgb(24, 21, 21);
-            /* border-radius: 6px; */
-            /* margin: 8px; */
-            box-shadow: 0 0 6px gray, 0 0 6px gray, 0 0 6px gray, 0 0 6px gray;
-        
         }
-
-        #navbar ul li {
-            list-style: none;
-            padding: 20px;
+       
+     
+        100%{
+            right: 24em;
+            /* left: 12em; */
         }
+    }
+   
+    #navbar ul {
+        background-color: rgb(63, 56, 56);
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: -16px;
+          }
+          #navbar  ul li {
+              list-style: none;
+              padding: 10px;
+          }
+          #navbar  ul li a{
+              text-decoration: none;
+              color: white;
+              font-family: 'Inter', sans-serif;
+              font-weight: bold;
+              transition: 2s;
+          }
+          #navbar  ul li a:hover{
+              color: orange;
 
-        #navbar ul li a {
+          }
+          @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+          .cont{border: 3px solid gray;
+            border-radius: 4px;
+              width: 35%;
+              margin-top: 65px;
+              /* margin-left: 6px; */
+              padding: 9px;
+           
+             font-family: 'Anton', sans-serif;
+              font-family: 'Inter', sans-serif;
+              font-family: 'Josefin Sans', sans-serif;
+             font-weight: bold
+          }
+          /* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:wght@700&display=swap'); */
+          @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Josefin+Sans:wght@700&display=swap');
+        .res p a {
+           
+            position: relative;
+           left:45em ;
+            bottom: 16em;
+            background-color:blue ;
+            padding: 6px;
             text-decoration: none;
             color: white;
-            font-weight: bolder;
+            font-weight: bold;
+            border-radius: 4px;
+            box-shadow: 0 0 4px gray ,0 0 4px gray,0 0 4px gray,0 0 4px gray;
+            font-family: 'Paytone One', sans-serif;
 
         }
-        
-        /* .pavan:hover::after {
-            position: absolute;
-            content: "";
-            width: 5%;
-            height: 0.18rem;
-            top: 6rem;
-            right:25rem;
-            background-color: blue;
-        } */
-
-        #news {
-            border: 4px solid yellow;
-            border-radius: 8px;
-            display: inline-block;
-            font-family: 'Ubuntu', sans-serif;
-            margin-top: 2.8em;
-            padding: 4px;
-            font-weight: bolder;
-            animation-name: new;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            /* border-top: 2px solid rgb(177, 152, 12); */
-
-        }
-
-        @keyframes new {
-            25% {
-                color: red;
-            }
-
-            50% {
-                color: green;
-            }
-
-            75% {
-                color: blue;
-            }
-
-            100% {
-                color: black;
-            }
-        }
-
-        #para {
-            width: 39%;
-
-            font-size: larger;
-            /* font-family: 'Oswald', sans-serif; */
-            font-family: 'Bebas Neue', cursive;
-            margin: 8px;
-        }
-
-        /* @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&family=Oswald&display=swap'); */
-        .n {
-            font-size: medium;
-            font-family: 'Bebas Neue', cursive;
-            margin: 6px;
-
-        }
-
-
-        #btn {
-            background-color: blue;
-            border: 2px solid black;
+        .res1 p a{
+           
+            position: relative;
+            left: 45em;
+            bottom: 14.5em;
+            background-color:blue ;
             padding: 6px;
+            text-decoration: none;
             color: white;
             font-weight: bold;
-            font-size: 12px;
-            position: relative;
-            left: 7.5rem;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        #btn:hover {
-            background-color: rgb(54, 4, 54);
-        }
-
-        #in {
-            border-radius: 8px;
-
-        }
-
-        input[type="search"] {
-            text-align: center;
-            /* padding: 8px; */
-            color: gray;
-            cursor: pointer;
-            margin: 8px;
-            position: relative;
-            bottom: 1.4px;
-            border: 2px solid black;
-        }
-
-        @media only screen and (min-width:320px) and (max-width:460px) {
-            #para {
-                width: 90%;
-                margin: 6px;
-                font-family: 'Bebas Neue', cursive;
-            }
-
-            #btn {
-                position: relative;
-                left: 7.5rem;
-            }
-
-            .burger{position: relative;
-           top: -5em;
-           left: 7em;
-            background-color: gray;
-            width: 29px;
-            padding: 5px;
             border-radius: 4px;
-            margin-left: 34px;
-           
-                    
+            box-shadow: 0 0 4px gray ,0 0 4px gray,0 0 4px gray,0 0 4px gray;
+            font-family: 'Paytone One', sans-serif;
+
         }
+        @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+
+
+        @media only screen and (min-width:360px) and (max-width:768px){
+            #anim{
+          background-color: whitesmoke;
+          border-radius: 4px;
+          box-shadow: 0 0 4px gray , 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
+          position: absolute;
+          left: 20em;
+          margin-top: 12px;
+          padding: 3px 6px 3px 6px;
+          position: relative;
+          animation-name: pav;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          transition-delay: 3s;
+          transition-timing-function: ease-in-out;
+          
+
+      }
+    @keyframes pav{
+        25%{
+            left: 8em;
             
-             .line {background-color:whitesmoke;
-            height: 4px;
-            width: 23px;
-            margin: 4px 4px;
-            border-radius: 6px;
-            position: relative;
-            left: -63em;
-            /* background-color: gray; */
-            /* display: inline; */
-             }
-             
-
-             #navbar ul {
-            display: flex;
-            flex-flow: column wrap;
-            position: absolute;
-            left: 10.2em;
-            padding: 90px 47px;
-            margin-top: -2.8em;
-            font-family: 'Ubuntu', sans-serif;
-            background-color:rgb(24, 21, 21);
-            box-shadow: 0 0 6px gray, 0 0 6px gray, 0 0 6px gray, 0 0 6px gray;
-        
         }
-        footer{
-            padding: 23px;
-            position: relative;
-            top: 80px;
+       
+     
+        100%{
+            right: 35em;
+            /* left: 12em; */
         }
-      
-    }       
-    
-        #span {
-            font-family: sans-serif;
-            border-radius: 4px;
-            padding: 3px;
-            color: white;
-            animation-name: nn;
-            animation-duration: 0.7s;
-            animation-iteration-count: infinite;
-        }
-
-        @keyframes nn {
-            50% {
-                background-color: white;
-
-            }
-
-            100% {
-                background-color: red;
-            }
-        }
-
-        footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(85, 62, 62);
-            height: 90px;
-            color: white;
-            /* font-family: 'Gluten', cursive; */
-            /* font-family: 'Bebas Neue', cursive; */
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            position: relative;
-            top: 90px;
-        }
-        .burger{
+    }
+    .res p a {
+           
            position: relative;
-           top: -5em;
-           left: 79em;
-            background-color: gray;
-            width: 29px;
-            padding: 5px;
+          left:21em ;
+           bottom: 30em;
+           background-color:blue ;
+           padding: 6px;
+           text-decoration: none;
+           color: white;
+           font-weight: bold;
+           border-radius: 4px;
+           box-shadow: 0 0 4px gray ,0 0 4px gray,0 0 4px gray,0 0 4px gray;
+           font-family: 'Paytone One', sans-serif;
+
+       }
+       .res1 p a{
+          
+           position: relative;
+           left: 21em;
+           bottom: 28.5em;
+           background-color:blue ;
+           padding: 6px;
+           text-decoration: none;
+           color: white;
+           font-weight: bold;
+           border-radius: 4px;
+           box-shadow: 0 0 4px gray ,0 0 4px gray,0 0 4px gray,0 0 4px gray;
+           font-family: 'Paytone One', sans-serif;
+
+       }
+       #navbar ul {
+        background-color: rgb(63, 56, 56);
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: -16px;
+        
+
+          }
+          .cont{border: 3px solid gray;
             border-radius: 4px;
-        }
-        
-        
-        .line{background-color:whitesmoke;
-            height: 4px;
-            width: 23px;
-            margin: 4px 4px;
-            border-radius: 6px; 
-            /* position: relative;
-            left: -0.1em; */
-
-        } 
-        #time{padding: 8px;
-            position: relative;
-            top: 12px;
-            right: 1px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+              width: 35%;
+              margin-top: 65px;
+              /* margin-left: 6px; */
+              padding: 9px;
+           
+             font-family: 'Anton', sans-serif;
+              font-family: 'Inter', sans-serif;
+              font-family: 'Josefin Sans', sans-serif;
+             font-weight: bold
+          }
 
         }
+       
     </style>
 </head>
-
 <body>
-    <h3 id="head">EDU NEWS.COM</h3>
-    <header id="nav">
-        <!-- <h4 id="na">NAV TECNIK >></h4> -->
-        <div class="burger" onclick="show()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+    <h3>NETCET-2021</h3>
+    <header>
         <nav id="navbar">
             <ul>
-                <li style=" font-family: 'Ubuntu', sans-serif;font-weight: bold;color: royalblue;">NAV TECNIK >></li>
-                <li> <a class="pavan" href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li> <a class="pavan" href="">Services</a></li>
-                <li> <a class="pavan" href="">Contact Us</a></li>
-                <!-- <input type="search" name="" id="in" placeholder="SEARCH HERE"> -->
+                <li> <a href="">Home</a> </li>
+                <li>  <a href="">About us</a> </li>
+                <li> <a href="">Contact us</a> </li>
+                <li> <a href="">Services</a></li>
             </ul>
         </nav>
     </header>
-   
-    <h4 id="news">NEW'S DESK:</h4>
-    <div class="n">Here's an update from EAPCET (AP)-2021 : <span id="span">NEW</span></div>
-    <div id="para">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corporis hic blanditiis nulla dolorum iusto
-        reiciendis ex alias! Consequatur voluptates quae, iusto quod ipsam eum excepturi ea, tempore obcaecati ex
-        architecto a et eaque reiciendis numquam vero delectus eos. Eum labore nulla quis qui corporis incidunt corrupti
-        suscipit minus officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut tempore soluta
-        numquam quae? Autem optio totam perferendis eaque molestiae vero nihil alias, hic temporibus officiis eveniet,
-        ea repellendus nisi laudantium deserunt illo ullam, blanditiis aperiam libero incidunt quia sit quaerat
-        corporis. Vero, porro dolor! 
+    <span id="anim">"NETCET-(2021) Results Declared Today"</span>
+    <div class="cont">
+        <h4>
+         About Us
+        </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, suscipit saepe. Dicta aspernatur blanditiis qui nobis, eveniet vel, deleniti unde dolore rerum voluptate possimus expedita veritatis. Quidem, corrupti consequuntur beatae quia debitis perferendis modi possimus ex delectus inventore suscipit iusto excepturi doloremque accusantium? Molestias voluptatibus provident pariatur maiores, iure voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maiores rerum veritatis asperiores magni quia. Porro dolores modi, animi nemo exercitationem ducimus deleniti voluptates praesentium distinctio perferendis a nobis! Sunt.</p>
     </div>
-    <div class="cen">
-
-        <button id="btn" onclick="hide()">SHOW/HIDE &checkmark;</button>
+    <div class="res">
+        <p> <a href="">VIEW NETCET RESULT (SERVER-I)</a> </p>
+       
     </div>
-    <footer>&copy;Copyrights all reserved.
-       <div class=""> <div>
-        <span id="time">TIME::  </span>
-    </div></div>
-    </footer>
-
-    <script>
-
-        function hide() {
-            let btn = document.getElementById('btn');
-            let para = document.getElementById('para');
-            if (para.style.display != 'none') {
-
-                para.style.display = 'none'
-            }
-            else {
-                para.style.display = 'block'
-            }
-
-
-        }
-
-        // function show() {
-        //     let burger = document.getElementById('burger');
-        //     let navbar = document.getElementById('navbar');
-        //     if (navbar.style. display !='none') {
-
-        //         navbar.style. display= 'none'
-        //     }
-        //     else {
-        //         navbar.style.display = 'block'
-        //     }
-        // }
-
-       var a;
-       function show(){
-           if (a==1){
-                document.getElementById('navbar').style.display="none";
-                return a=0;
-
-           }
-           else{
-               document.getElementById('navbar').style.display='inline'
-               return a=1;
-           }
-       }
-      function displayTime(){
-          time = new Date();
-          console.log(time);
-          document.getElementById('time').innerHTML =time;
-      }
-      setInterval(displayTime, 1000);
-
-    </script>
+    <div class="res1">
+    <p><a href="">VIEW NETCET RESULT (SERVER-II)</p>
+    </div> 
 </body>
-
 </html>
