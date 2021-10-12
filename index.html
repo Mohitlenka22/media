@@ -10,6 +10,8 @@
              text-align: center;
              color: red;
              font-weight: bold;
+             font-family: 'Mate SC', serif;
+            font-family: 'Paytone One', sans-serif;
          }
       #anim{
           background-color: whitesmoke;
@@ -42,7 +44,8 @@
     }
    
     #navbar ul {
-        background-color: rgb(63, 56, 56);
+        background-color: rgb(20, 14, 102);
+        border-radius: 18px;
         height: 50px;
         width: 100%;
         display: flex;
@@ -67,51 +70,111 @@
 
           }
           @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-          .cont{border: 3px solid gray;
-            border-radius: 4px;
-              width: 35%;
-              margin-top: 65px;
-              /* margin-left: 6px; */
-              padding: 9px;
-           
-             font-family: 'Anton', sans-serif;
+          .cont{
+             
+              display: grid;
+              grid-template-rows: repeat(4,1fr 1fr 1fr);
+              grid-row-gap: 0em;
+              margin-top: 4em;
+              font-family: 'Anton', sans-serif;
               font-family: 'Inter', sans-serif;
               font-family: 'Josefin Sans', sans-serif;
-             font-weight: bold
+              font-weight: bold
+            }
+            .item1,.item2,.item3,.item4,.item5{ 
+                border: 1px solid gray;
+                box-shadow: 0 0 0px gray, 0 0 4px gray ,0 0 4px gray, 0 0 4px gray;
+              width: 30%;
+              height: 1.8em;
+              padding: 12px 5px 26px 15px;
+              font-size: small;
+              
+              
           }
-          /* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:wght@700&display=swap'); */
+          .item5{
+              background-color: rgb(44, 38, 38);
+              color: white;
+              
+          }
+          .cont1{
+             position: relative;
+             left: 53em;
+              bottom: 55em;
+             display: grid;
+             grid-template-rows: repeat(4,1fr 1fr 1fr);
+             grid-row-gap: 0em;
+             margin-top: 4em;
+             font-family: 'Anton', sans-serif;
+             font-family: 'Inter', sans-serif;
+             font-family: 'Josefin Sans', sans-serif;
+             font-weight: bold
+             
+
+           }
+           .item11,.item21,.item31,.item41,.item51{ 
+               border: 1px solid gray;
+               box-shadow: 0 0 0px gray, 0 0 4px gray ,0 0 4px gray, 0 0 4px gray;
+             width: 30%;
+             height: 1.8em;
+             padding: 12px 5px 26px 15px;
+             font-size: small;
+             background-color: rgb(41, 37, 37);
+            }  
+            .item11,.item21,.item31,.item41 a{
+                
+                color:white;
+           }  
+         
+         .item51{
+             color: rgb(44, 38, 38);
+            background-color:  white;}
+          
+         div a {
+            text-decoration: none;}
+         
+         
           @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Josefin+Sans:wght@700&display=swap');
         .res p a {
            
             position: relative;
-           left:45em ;
-            bottom: 16em;
+           left:29em ;
+            bottom: 42em;
             background-color:blue ;
-            padding: 6px;
+            padding: 9px;
             text-decoration: none;
             color: white;
-            font-weight: bold;
+            /* font-weight: bold; */
             border-radius: 4px;
             box-shadow: 0 0 4px gray ,0 0 4px gray,0 0 4px gray,0 0 4px gray;
-            font-family: 'Paytone One', sans-serif;
-
+            font-family: 'Anton', sans-serif;
+              font-family: 'Inter', sans-serif;
+              font-family: 'Josefin Sans', sans-serif;
+              font-weight: bold
         }
+        @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Paytone+One&display=swap');
+
+
         .res1 p a{
            
             position: relative;
-            left: 45em;
-            bottom: 14.5em;
+            left: 28.9em;
+            bottom: 40.5em;
             background-color:blue ;
-            padding: 6px;
+            padding: 9px;
             text-decoration: none;
             color: white;
-            font-weight: bold;
+            /* font-we3ight: bold; */
             border-radius: 4px;
             box-shadow: 0 0 4px gray ,0 0 4px gray,0 0 4px gray,0 0 4px gray;
-            font-family: 'Paytone One', sans-serif;
+            font-family: 'Anton', sans-serif;
+              font-family: 'Inter', sans-serif;
+              font-family: 'Josefin Sans', sans-serif;
+              font-weight: bold
+
+            
 
         }
-        @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Paytone+One&display=swap');
 
 
 
@@ -218,10 +281,11 @@
     </header>
     <span id="anim">"NETCET-(2021) Results Declared Today"</span>
     <div class="cont">
-        <h4>
-         About Us
-        </h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, suscipit saepe. Dicta aspernatur blanditiis qui nobis, eveniet vel, deleniti unde dolore rerum voluptate possimus expedita veritatis. Quidem, corrupti consequuntur beatae quia debitis perferendis modi possimus ex delectus inventore suscipit iusto excepturi doloremque accusantium? Molestias voluptatibus provident pariatur maiores, iure voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maiores rerum veritatis asperiores magni quia. Porro dolores modi, animi nemo exercitationem ducimus deleniti voluptates praesentium distinctio perferendis a nobis! Sunt.</p>
+         <div class="item5">About Us &nbsp;&nbsp;&nbsp;&nbsp;&checkmark;</div>
+         <div class="item1"> <a href="">Information Bulletin: Agency of Testing - MDET(Mock Division for Engineering Testing)</a> </div>
+         <div class="item2"> <a href="">PUBLIC NOTICE: Schedule of NETCET-2021-Reg.</a> </div>
+         <div class="item3"> <a href="">PUBLIC NOTICE:Relaxation in eligibilty criteria under national engineering test NETCET-2021 for academic year 2021-2022</a></div>
+         <div class="item4"> <a href=""></a></div>
     </div>
     <div class="res">
         <p> <a href="">VIEW NETCET RESULT (SERVER-I)</a> </p>
@@ -230,5 +294,19 @@
     <div class="res1">
     <p><a href="">VIEW NETCET RESULT (SERVER-II)</p>
     </div> 
+    <div class="cont1">
+        <div class="item51">About Us &nbsp;&nbsp;&nbsp;&nbsp;&checkmark;</div>
+        <div class="item11"> <a href="">Information Bulletin: Agency of Testing - MDET(Mock Division for Engineering Testing)</a> </div>
+        <div class="item21"> <a href="">PUBLIC NOTICE: Schedule of NETCET-2021-Reg.</a> </div>
+        <div class="item31"> <a href="">PUBLIC NOTICE:Relaxation in eligibilty criteria under national engineering test NETCET-2021 for academic year 2021-2022</a></div>
+        <div class="item41"> <a href=""></a></div>
+   </div>
+
+
+   <script>
+     var a = 34;
+     console.log(a);
+
+   </script>
 </body>
 </html>
