@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Application</title>
+    <style>
+        #class{text-align: center;
+            background-color:  darkred;
+            height: 80px;
+            width: 100%;
+            color: white;
+            margin-top: -8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 1px 1px 0px white;
+        }
+        .last{ color:white;
+          position: relative;
+          top: 20em;
+          background-color: rgb(39, 35, 35);
+          height: 66px;
+          text-align: center;
+          padding-top: 45px;
+      }
+      .last:hover{
+          color: blue;
+      }
+      .container{
+          border: 2px solid black;
+          border-radius: 6px;
+          height: 200px;
+          width: 35%;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        box-shadow:  0px 0px 7px gray, 0px 0px 7px gray, 0px 0px 7px gray, 0px 0px 7px gray;
+         
+      }
+      #first{
+          border-radius: 7px;
+          background-color: rgb(216, 154, 154);
+          padding: 8px;
+          font-weight: bold;
+
+      }
+      #sec{
+            display: block;
+            margin: auto;
+            margin-top: 16px;
+           
+            
+      }
+      input[type='submit']{
+          text-transform: uppercase;
+          font-weight: bold;
+          border-radius: 4px;
+          border: 2px solid black;
+      }
+      #sec:hover{
+          background-color: blue;
+      }
+      
+     
+        
+    </style>
+
+
+</head>
+<body>
+    <h3 id="class">REGISTRATION PORTAL FOR MTCE(MAIN)-2021</h3>
+    <div class="container">
+
+        <form action="backend.php">
+            <input type="text" id="first" placeholder="Enter Your Name">&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="Email" id="first" placeholder="Email">
+           <div><input type="SUBMIT" placeholder="SUBMIT"  id="sec" ></div> 
+        </form>
+    </div>
+    <div class="last">&copy;Copyrights all reserved. <br>Designed&Hosted by Mock Arena.</div>
+</body>
+</html>
