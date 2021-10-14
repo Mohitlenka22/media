@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jet</title>
-    <link rel="services.html" href="">
     <style>
          h3{
              text-align: center;
@@ -48,7 +47,7 @@
         background-color: rgb(20, 14, 102);
         border-radius: 18px;
         height: 50px;
-        width: 97%;
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -139,101 +138,88 @@
           border-radius: 4px;
           box-shadow: 0 0 4px gray , 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
           position: absolute;
-          left: 20em;
+          left: -4em;
           margin-top: 12px;
           padding: 3px 6px 3px 6px;
           position: relative;
           animation-name: pav;
-          animation-duration: 5s;
+          animation-duration: 4s;
           animation-iteration-count: infinite;
           transition-delay: 3s;
             transition-timing-function: ease-in-out}
-          
-        .container{
-            display: flex;
-            flex-flow: column wrap;
+         
+        .navbar ul{
+           position: relative;
+           left: -1em;
+           box-sizing: border-box;
+            
         }
+        #navbar  ul li a{
+            font-size: small;
+            /* padding: -2px; */
+        }
+          .navbar ul li{
+              padding: -2px;
 
+          }
+       
+        .cont{
+            margin: auto;
+            margin-left: 6px;
+            margin-top: 1.5em;
+            width: 290%;
+            height: 75%;
+        }
+        .conat{
+           margin-left: -25em;
+          position:absolute;
+          top: -8em;
+       
+          
+            
+          
+                }
+     .cont1{
+          position:relative;
+          width: 290%;
+          left: 0.3em;
+          top: -3em;
+     }
+    .res,.res1{
+         display: block;
+         padding: 7px;
+         margin-top: 3em;
+       
+    }
+    .container{
+        box-sizing: border-box;
+    }
+    
+    
       
     @keyframes pav{
         25%{
-            left: 8em;
+            left:8em;
             
         }
        
      
         100%{
-            right: 35em;
-            /* left: 12em; */
-        }
+            right:4em;
+            
+                }
     }
-    .res p a {
-           
-           position: relative;
-          left:21em ;
-           bottom: 30em;
-           background-color:blue ;
-           padding: 6px;
-           text-decoration: none;
-           color: white;
-           font-weight: bold;
-           border-radius: 4px;
-           box-shadow: 0 0 4px gray ,0 0 4px gray,0 0 4px gray,0 0 4px gray;
-           font-family: 'Paytone One', sans-serif;
-
-       }
-       .res1 p a{
-          
-           position: relative;
-           left: 21em;
-           bottom: 28.5em;
-           background-color:blue ;
-           padding: 6px;
-           text-decoration: none;
-           color: white;
-           font-weight: bold;
-           border-radius: 4px;
-           box-shadow: 0 0 4px gray ,0 0 4px gray,0 0 4px gray,0 0 4px gray;
-           font-family: 'Paytone One', sans-serif;
-
-       }
-       #navbar ul {
-        background-color: rgb(63, 56, 56);
-        height: 50px;
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        margin-left: -16px;
-        
-
-          }
-          .cont{border: 3px solid gray;
-            border-radius: 4px;
-              width: 35%;
-              margin-top: 65px;
-              /* margin-left: 6px; */
-              padding: 9px;
-           
-             font-family: 'Anton', sans-serif;
-              font-family: 'Inter', sans-serif;
-              font-family: 'Josefin Sans', sans-serif;
-             font-weight: bold;
-          }
-          .container{
-              display: flex; 
-               flex-flow: row wrap;
-          }
+    
+         
         }
      body{
          height:100vh ;
          width: 100vw;
      }
      .conat{
-         display: grid;
-         grid-template-rows: repeat(2,0.2fr 0.2fr);
-         grid-row-gap: 1em;
+         display: grid; 
+         grid-template-rows: repeat(2,0.3fr 0.3fr);
+          grid-row-gap: 0.7em;
          position: relative;
          bottom: 43em;
          left: 30em;
@@ -252,59 +238,74 @@
      .res:hover{
          border: 4px solid rgb(82, 82, 255);
      }
-     .res1 p a {
+     .res1 span a {
          color: white;
          font-weight: bold;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         
      }
-     .res p a {
+     .res span a {
          color: white;
          font-weight: bold;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
      }
 
  </style>
     </head>
 <body>
     <h3>NETCET-2021</h3>
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li> <a href="/home">Home</a> </li>
-                <li>  <a href="/About">About us</a> </li>
-                <li> <a href="/contact">Contact us</a> </li>
-                <li> <a href="/services">Online Application</a></li>
-            </ul>
-        </nav>
-    </header>
-    <span id="anim">"NETCET-(2021) Results Declared Today"</span>
     <div class="container">
 
 
-        <div class="cont">
-             <div class="item5">About Us &nbsp;&nbsp;&nbsp;&nbsp;&checkmark;</div>
-             <div class="item1"> <a href="">Information Bulletin: Agency of Testing - MDET(Mock Division for Engineering Testing)</a> </div>
-             <div class="item2"> <a href="">PUBLIC NOTICE: Schedule of NETCET-2021-Reg.</a> </div>
-             <div class="item3"> <a href="">PUBLIC NOTICE:Relaxation in eligibilty criteria under national engineering test NETCET-2021 for academic year 2021-2022</a></div>
-             <div class="item4"> <a href=""></a></div>
-        </div>
-        <div class="conat">
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <li> <a href="">Home</a> </li>
+                    <li>  <a href="">About us</a> </li>
+                    <li> <a href="">Contact us</a> </li>
+                    <li> <a href="">Services</a></li>
+                </ul>
+            </nav>
+        </header>
+        <span id="anim">"NETCET-(2021) Results Declared Today"</span>
+       
     
-            <div class="res">
-                <p> <a href="">VIEW NETCET RESULT (SERVER-I)</a> </p>
-               
+    
+            <div class="cont">
+                 <div class="item5">About Us &nbsp;&nbsp;&nbsp;&nbsp;&checkmark;</div>
+                 <div class="item1"> <a href="">Information Bulletin: Agency of Testing - MDET(Mock Division for Engineering Testing)</a> </div>
+                 <div class="item2"> <a href="">PUBLIC NOTICE: Schedule of NETCET-2021-Reg.</a> </div>
+                 <div class="item3"> <a href="">PUBLIC NOTICE:Relaxation in eligibilty criteria under national engineering test NETCET-2021 for academic year 2021-2022</a></div>
+                 <div class="item4"> <a href=""></a></div>
             </div>
-            <div class="res1">
-            <p><a href="">VIEW NETCET RESULT (SERVER-II)</p>
-            </div> 
-        </div>
-        <div class="cont1">
-            <div class="item51">About Us &nbsp;&nbsp;&nbsp;&nbsp;&checkmark;</div>
-            <div class="item11"> <a href="">Information Bulletin: Agency of Testing - MDET(Mock Division for Engineering Testing)</a> </div>
-            <div class="item21"> <a href="">PUBLIC NOTICE: Schedule of NETCET-2021-Reg.</a> </div>
-            <div class="item31"> <a href="">PUBLIC NOTICE:Relaxation in eligibilty criteria under national engineering test NETCET-2021 for academic year 2021-2022</a></div>
-            <div class="item41"> <a href=""></a></div>
-       </div>
+            <div class="conat">
+        
+                <div class="res">
+                    <span> <a href="">VIEW NETCET RESULT (SERVER-I)</a> </span>
+                   
+                </div>
+                <div class="res1">
+                <span><a href="">VIEW NETCET RESULT (SERVER-II)</span>
+                </div> 
+            </div>
+            <div class="cont1">
+                <div class="item51">About Us &nbsp;&nbsp;&nbsp;&nbsp;&checkmark;</div>
+                <div class="item11"> <a href="">Information Bulletin: Agency of Testing - MDET(Mock Division for Engineering Testing)</a> </div>
+                <div class="item21"> <a href="">PUBLIC NOTICE: Schedule of NETCET-2021-Reg.</a> </div>
+                <div class="item31"> <a href="">PUBLIC NOTICE:Relaxation in eligibilty criteria under national engineering test NETCET-2021 for academic year 2021-2022</a></div>
+                <div class="item41"> <a href=""></a></div>
+           </div>
+        
     </div>
 
-<script src="main.js"></script>
+
+   <!-- <script>
+     var a = 34;
+     console.log(a);
+     data={name:"pavan",age:21,skill:"computing"};
+     console.log(data)
+
+   </script> -->
 </body>
 </html>
