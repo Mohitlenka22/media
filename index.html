@@ -1,258 +1,325 @@
-<!DOCTYPE html
-<html lang="en">
+<!DOCTYPE html <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jet</title>
     <style>
-         h3{
-             text-align: center;
-             color: red;
-             font-weight: bold;
-             font-family: 'Mate SC', serif;
+        *{
+            overflow-x: hidden;
+        }
+
+        h3 {
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            font-family: 'Mate SC', serif;
             font-family: 'Paytone One', sans-serif;
-         }
-      #anim{
-          background-color: whitesmoke;
-          border-radius: 4px;
-          box-shadow: 0 0 4px gray , 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
-          position: absolute;
-          left: 55em;
-          position: relative;
-          animation-name: pav;
-          animation-duration: 9s;
-          animation-iteration-count: infinite;
-          transition-delay: 3s;
-          transition-timing-function: ease-in-out;
-          margin-top: 7px;
-          padding: 3px 6px 3px 6px;
-          
-
-      }
-    @keyframes pav{
-        50%{
-            left: 8em;
-            
         }
-       
-     
-        100%{
-            right: 24em;
-            /* left: 12em; */
-        }
-    }
-   
-    #navbar ul {
-        background-color: rgb(20, 14, 102);
-        border-radius: 18px;
-        height: 50px;
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        margin-left: -16px;
-          }
-          #navbar  ul li {
-              list-style: none;
-              padding: 10px;
-          }
-          #navbar  ul li a{
-              text-decoration: none;
-              color: white;
-              font-family: 'Inter', sans-serif;
-              font-weight: bold;
-              transition: 2s;
-          }
-          #navbar  ul li a:hover{
-              color: orange;
 
-          }
-          @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-          .cont{
-             
-              display: grid;
-              grid-template-rows: repeat(4,1fr 1fr 1fr);
-              grid-row-gap: 0em;
-              margin-top: 1em;
-              font-family: 'Anton', sans-serif;
-              font-family: 'Inter', sans-serif;
-              font-family: 'Josefin Sans', sans-serif;
-              font-weight: bold;
+        #anim {
+            background-color: whitesmoke;
+            border-radius: 4px;
+            box-shadow: 0 0 4px gray, 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
+            position: absolute;
+            left: 55em;
+            position: relative;
+            animation-name: pav;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            transition-delay: 3s;
+            transition-timing-function: ease-in-out;
+            margin-top: 7px;
+            padding: 3px 6px 3px 6px;
+
+
+        }
+
+        @keyframes pav {
+            50% {
+                left: 8em;
+
             }
-            .item1,.item2,.item3,.item4,.item5{ 
-                border: 1px solid gray;
-                box-shadow: 0 0 0px gray, 0 0 4px gray ,0 0 4px gray, 0 0 4px gray;
-              width: 30%;
-              height: 1.8em;
-              padding: 12px 5px 26px 15px;
-              font-size: small;
-              
-              
-          }
-          .item5{
-              background-color: rgb(44, 38, 38);
-              color: white;   
-          }
-          .cont1{
-             position: relative;
-             left: 52em;
-             bottom: 62.4em;
-             display: grid;
-             grid-template-rows: repeat(4,1fr 1fr 1fr);
-             grid-row-gap: 0em;
-             margin-top: 4em;
-             font-family: 'Anton', sans-serif;
-             font-family: 'Inter', sans-serif;
-             font-family: 'Josefin Sans', sans-serif;
-             font-weight: bold;
-           }
-           .item11,.item21,.item31,.item41,.item51{ 
-               border: 1px solid gray;
-               box-shadow: 0 0 0px gray, 0 0 4px gray ,0 0 4px gray, 0 0 4px gray;
-             width: 30%;
-             height: 1.8em;
-             padding: 12px 5px 26px 15px;
-             font-size: small;
-             background-color: rgb(41, 37, 37);
-            }  
-            .item11,.item21,.item31,.item41 a{
-                
-                color:white;
-           }  
-         
-         .item51{
-             color: rgb(44, 38, 38);
-            background-color:  white;}
-          
-         div a {
-            text-decoration: none;}
-         
-         
-          @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Josefin+Sans:wght@700&display=swap');
-       
-        @media only screen and (min-width:320px) and (max-width:480px){
-            #anim{
-          background-color: whitesmoke;
-          border-radius: 4px;
-          box-shadow: 0 0 4px gray , 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
-          position: absolute;
-          left: -4em;
-          margin-top: 12px;
-          padding: 3px 6px 3px 6px;
-          position: relative;
-          animation-name: pav;
-          animation-duration: 4s;
-          animation-iteration-count: infinite;
-          transition-delay: 3s;
-            transition-timing-function: ease-in-out}
-         
-        .navbar ul{
-           position: relative;
-           left: -1em;
-           box-sizing: border-box;
-            
+
+
+            100% {
+                right: 24em;
+                /* left: 12em; */
+            }
         }
-        #navbar  ul li a{
+
+        #navbar ul {
+            background-color: rgb(20, 14, 102);
+            /* border-radius: 18px; */
+            height: 50px;
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin-left: -16px;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            transition: 2s;
+        }
+
+        #navbar ul li a:hover {
+            color: orange;
+
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+        .cont {
+
+            display: grid;
+            grid-template-rows: repeat(4, 1fr 1fr 1fr);
+            /* grid-row-gap: 2em; */
+            margin-top: 1em;
+            font-family: 'Anton', sans-serif;
+            font-family: 'Inter', sans-serif;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: bold;
+        }
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5 {
+            border: 1px solid gray;
+            box-shadow: 0 0 0px gray, 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
+            width: 30%;
+            height: 1.8em;
+            padding: 12px 5px 26px 15px;
             font-size: small;
-            /* padding: -2px; */
-        }
-          .navbar ul li{
-              padding: -2px;
 
-          }
-       
-        .cont{
-            margin: auto;
-            margin-left: 6px;
-            margin-top: 1.5em;
+
+        }
+
+        .item5 {
+            background-color: rgb(44, 38, 38);
+            color: white;
+        }
+
+        .cont1 {
+            position: relative;
+            left: 52em;
+            bottom: 60rem;
+            display: grid;
+            grid-template-rows: repeat(4, 1fr 1fr 1fr);
+            grid-row-gap: 0em;
+            margin-top: 4em;
+            font-family: 'Anton', sans-serif;
+            font-family: 'Inter', sans-serif;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: bold;
+        }
+
+        .item11,.item21,.item31,.item41,.item51{
+            border: 1px solid gray;
+            box-shadow: 0 0 0px gray, 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
+            width: 30%;
+            height: 1.8em;
+            padding: 12px 5px 26px 15px;
+            font-size: small;
+            background-color: rgb(41, 37, 37);
+        }
+
+        .item11,
+        .item21,
+        .item31,
+        .item41 a {
+
+            color: white;
+        }
+
+        .item51 {
+            color: rgb(44, 38, 38);
+            background-color: white;
+        }
+
+        div a {
+            text-decoration: none;
+        }
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Josefin+Sans:wght@700&display=swap');
+
+        @media only screen  and (max-width:500px) {
+            *{
+                box-sizing: border-box;
+                overflow-x:hidden ;
+                position: relative;
+                left: 0.13em;
+            }
+            #anim {
+                background-color: whitesmoke;
+                border-radius: 4px;
+                box-shadow: 0 0 4px gray, 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
+                position: absolute;
+                left: -4em;
+                margin-top: 12px;
+                padding: 3px 6px 3px 6px;
+                position: relative;
+                animation-name: pav;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                transition-delay: 3s;
+                transition-timing-function: ease-in-out
+            }
+
+            .navbar ul {
+                border-radius: 6px;
+
+            }
+
+            #navbar ul li a {
+                font-size: small;
+                /* padding: -2px; */
+            }
+
+            .navbar ul li {
+                padding: -2px;
+
+            }
+
+            .cont {
+                margin: auto;
+                margin-left: 14px;
+                margin-top: 1.5em;
+                width: 290%;
+                height: 100%;
+               
+            }
+
+        .item1,.item2,.item3,.item4,.item5{
+            row-gap: 0em;
+            overflow-y: hidden;
+            padding: 20px 12px 58px 12px;
+        }
+        
+        .cont1 {
+            position: relative;
             width: 290%;
-            height: 75%;
-        }
-        .conat{
-           margin-left: -25em;
-          position:absolute;
-          top: -8em;
-       
-          
-            
-          
-                }
-     .cont1{
-          position:relative;
-          width: 290%;
-          left: 0.3em;
-          top: -3em;
-     }
-    .res,.res1{
-         display: block;
-         padding: 7px;
-         margin-top: 3em;
-       
-    }
-    .container{
-        box-sizing: border-box;
-    }
-    
-    
-      
-    @keyframes pav{
-        25%{
-            left:8em;
+            left: 0.8em;
+            bottom: 4rem;
             
         }
-       
-     
-        100%{
-            right:4em;
+        .item11,.item21,.item31,.item41,.item51{
+            padding: 25px 12px 58px 12px;
+            overflow-y: hidden;
             
-                }
-    }
-    
-         
         }
-     body{
-         height:100vh ;
-         width: 100vw;
-     }
-     .conat{
-         display: grid; 
-         grid-template-rows: repeat(2,0.3fr 0.3fr);
-          grid-row-gap: 0.7em;
-         position: relative;
-         bottom: 43em;
-         left: 30em;
-     }
-     .res,.res1{
-         background-color: blue;
-         width: 22%;
-         padding:1px 4px 1px 6px;
-         border-radius: 5px;
         
+        .conat {
+            display: grid;
+        grid-template-rows: repeat(2, 1fr 1fr);
+        grid-row-gap: 0.7em;
+            margin-left: -25em;
+            position: absolute;
+            top: -8em;
+            padding: 15px;
+        }
+           .res {   
+                /* height: 200px; */
+                padding: 22px 12px 22px 12px;
+                margin-top: 3em;
+                box-shadow: 0 0 4px gray, 0 0 4px gray ,0 0 4px gray ,0 0 4px gray;
+                overflow:hidden;
+                font-size: small;
+            }
+            .res1{
+                
+                padding: 40px 12px 40px 12px;
+                height:3em;
+                width: 3em;
+                margin-top: 3em;
+                box-shadow: 0 0 4px gray, 0 0 4px gray ,0 0 4px gray ,0 0 4px gray;
+                overflow:hidden;
+                font-size: small;
+            }
+
+
+
+            @keyframes pav {
+                25% {
+                    left: 8em;
+
+                }
+
+
+                100% {
+                    right: 4em;
+
+                }
+            }
+
+
+        }
+
+        body {
+            height: 89vh;
+            width: 100vw;
+        }
+
+        .conat {
+            display: grid;
+            grid-template-rows: repeat(2, 0.3fr 0.3fr);
+            grid-row-gap: 0.7em;
+            /* overflow-y: hidden; */
+            position: relative;
+            bottom: 43em;
+            left: 30em;
+        }
+
+        .res,
+        .res1 {
+            background-color: blue;
+            width: 22%;
+            padding: 7px 4px 10px 6px;
+            border-radius: 5px;
+            height: 23px;
+            text-align: center;
+
+
+        }
         
-     }
-     .res1:hover{
-         border: 4px solid rgb(82, 82, 255);
-     }
-     .res:hover{
-         border: 4px solid rgb(82, 82, 255);
-     }
-     .res1 span a {
-         color: white;
-         font-weight: bold;
-         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-         
-     }
-     .res span a {
-         color: white;
-         font-weight: bold;
-         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        .res1:hover {
+            border: 4px solid rgb(82, 82, 255);
+        }
 
-     }
+        .res:hover {
+            border: 4px solid rgb(82, 82, 255);
+        }
 
- </style>
-    </head>
+        .res1 span a {
+            color: white;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .res span a {
+            color: white;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+    </style>
+</head>
+
 <body>
     <h3>NETCET-2021</h3>
     <div class="container">
@@ -262,50 +329,46 @@
             <nav id="navbar">
                 <ul>
                     <li> <a href="">Home</a> </li>
-                    <li>  <a href="">About us</a> </li>
+                    <li> <a href="">About us</a> </li>
                     <li> <a href="">Contact us</a> </li>
                     <li> <a href="">Services</a></li>
                 </ul>
             </nav>
         </header>
         <span id="anim">"NETCET-(2021) Results Declared Today"</span>
-       
-    
-    
-            <div class="cont">
-                 <div class="item5">About Us &nbsp;&nbsp;&nbsp;&nbsp;&checkmark;</div>
-                 <div class="item1"> <a href="">Information Bulletin: Agency of Testing - MDET(Mock Division for Engineering Testing)</a> </div>
-                 <div class="item2"> <a href="">PUBLIC NOTICE: Schedule of NETCET-2021-Reg.</a> </div>
-                 <div class="item3"> <a href="">PUBLIC NOTICE:Relaxation in eligibilty criteria under national engineering test NETCET-2021 for academic year 2021-2022</a></div>
-                 <div class="item4"> <a href=""></a></div>
+
+
+
+        <div class="cont">
+            <div class="item5">About Us &nbsp;&nbsp;&nbsp;&nbsp;&checkmark;</div>
+            <div class="item1"> <a href="">Information Bulletin: Agency of Testing - MDET(Mock Division for Engineering
+                    Testing)</a> </div>
+            <div class="item2"> <a href="">PUBLIC NOTICE: Schedule of NETCET-2021-Reg.</a> </div>
+            <div class="item3"> <a href="">PUBLIC NOTICE:Relaxation in eligibilty criteria under national engineering
+                    test NETCET-2021 for academic year 2021-2022</a></div>
+            <div class="item4"> <a href=""></a></div>
+        </div>
+        <div class="conat">
+
+            <div class="res">
+                <span> <a href="">View NET-2021 Result</a> </span>
+
             </div>
-            <div class="conat">
-        
-                <div class="res">
-                    <span> <a href="">VIEW NETCET RESULT (SERVER-I)</a> </span>
-                   
-                </div>
-                <div class="res1">
-                <span><a href="">VIEW NETCET RESULT (SERVER-II)</span>
-                </div> 
+            <div class="res1">
+                <span><a href="">Registration For NET-2021(For who not Registered ) </span>
             </div>
-            <div class="cont1">
-                <div class="item51">About Us &nbsp;&nbsp;&nbsp;&nbsp;&checkmark;</div>
-                <div class="item11"> <a href="">Information Bulletin: Agency of Testing - MDET(Mock Division for Engineering Testing)</a> </div>
-                <div class="item21"> <a href="">PUBLIC NOTICE: Schedule of NETCET-2021-Reg.</a> </div>
-                <div class="item31"> <a href="">PUBLIC NOTICE:Relaxation in eligibilty criteria under national engineering test NETCET-2021 for academic year 2021-2022</a></div>
-                <div class="item41"> <a href=""></a></div>
-           </div>
-        
+        </div>
+        <div class="cont1">
+            <div class="item51">About Us &nbsp;&nbsp;&nbsp;&nbsp;&checkmark;</div>
+            <div class="item11"> <a href="">Information Bulletin: Agency of Testing - MDET(Mock Division for Engineering
+                    Testing)</a> </div>
+            <div class="item21"> <a href="">PUBLIC NOTICE: Schedule of NETCET-2021-Reg.</a> </div>
+            <div class="item31"> <a href="">PUBLIC NOTICE:Relaxation in eligibilty criteria under national engineering
+                    test NETCET-2021 for academic year 2021-2022</a></div>
+            <div class="item41"> <a href=""></a></div>
+        </div>
+
     </div>
-
-
-   <!-- <script>
-     var a = 34;
-     console.log(a);
-     data={name:"pavan",age:21,skill:"computing"};
-     console.log(data)
-
-   </script> -->
 </body>
+
 </html>
