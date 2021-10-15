@@ -128,6 +128,7 @@
         }
 
         .item11,.item21,.item31,.item41,.item51{
+            
             border: 1px solid gray;
             box-shadow: 0 0 0px gray, 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
             width: 30%;
@@ -137,7 +138,9 @@
             background-color: rgb(41, 37, 37);
             overflow-y: hidden;
         }
-
+          .item11,.item21,.item31,.item41,.item51 a {
+                 color: white;
+             }
         .item11,
         .item21,
         .item31,
@@ -237,7 +240,11 @@
             padding: 23px;
         }
         
-          
+        footer{
+            position: relative;
+           top: -25em;
+           padding: 15px;
+        }
 
 
 
@@ -305,6 +312,21 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
         }
+        footer{
+            background-color: rgb(39, 37, 37);
+            height: 6em;
+            color: white;
+            position: relative;
+            bottom: 80em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
     </style>
 </head>
 
@@ -357,6 +379,17 @@
         </div>
 
     </div>
+    <footer>&copy;Copyrights all reserved. <div id="time">
+
+    </div></footer>
+    <script>
+          function displayTime(){
+          time = new Date();
+          console.log(time);
+          document.getElementById('time').innerHTML =time;
+      }
+      setInterval(displayTime, 1000);
+    </script>
 </body>
 
 </html>
